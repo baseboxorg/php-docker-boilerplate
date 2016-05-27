@@ -21,3 +21,6 @@ CAKE_ENV=dev
 
 # yii
 YII_ENVIRONMENT=Development
+
+VIRTUAL_HOST=wordpress.docker
+VIRTUAL_PORT=80
