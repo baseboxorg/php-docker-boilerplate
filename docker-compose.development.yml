@@ -14,8 +14,8 @@ app:
     #- memcached
     #- ftp
   ports:
-    - "8000:80"
-    - "1443:443"
+    - "80:80"
+    - "443:443"
     - "10022:22"
   volumes:
     - ./app/:/app/
@@ -98,24 +98,24 @@ mysql:
 #######################################
 # Redis
 #######################################
-#redis:
-#  build: docker/redis/
-#  volumes_from:
-#    - storage
-#  env_file:
-#    - etc/environment.yml
-#    - etc/environment.development.yml
+redis:
+  build: docker/redis/
+  volumes_from:
+    - storage
+  env_file:
+    - etc/environment.yml
+    - etc/environment.development.yml
 
 #######################################
 # Memcached
 #######################################
-#memcached:
-#  build: docker/memcached/
-#  volumes_from:
-#    - storage
-#  env_file:
-#    - etc/environment.yml
-#    - etc/environment.development.yml
+memcached:
+  build: docker/memcached/
+  volumes_from:
+    - storage
+  env_file:
+    - etc/environment.yml
+    - etc/environment.development.yml
 
 #######################################
 # Mailcatcher
