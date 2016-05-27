@@ -20,7 +20,7 @@ CLI_SCRIPT=php /app/index.php
 # -> ssh-rsa AAAAB3Nza....
 #  Github public ssh keys:
 # -> https://github.com/USERNAME.keys
-SSH_AUTH_KEY=""
+SSH_AUTH_KEY="ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDsWJYZ9N+jslAMdHHQ16fxafpqdfRkGRamKsogprD8mqK0jJAthwHpm7IPWIpqF5BBfha6+/EuZmVHztoqVltxuVHP0BKbLXgqKFudZjWrkWS9gTh5yzendpG2ija6wuSX8vGcMopWZRp0JPlILmNc3ENR6usf8RvoxSR59sSeSBueVkex5G9VyWT+0L/ENswsqA8E27dSlVvQv1wHz4ZSWUe/CLYS5QJ2WPF/BLLgfOYjMhRqdJyI6/gNOVWcloRNSygsgZA0COZOM0wgTupdl1gXchV4Zl6vlxHYjq80wWiDLeFNFW1QspndGK+kpK6mjQk8kob6Nvfpsbpr2h2t openbase-key"
 
 #######################################
 # MySQL settings
@@ -30,10 +30,10 @@ SSH_AUTH_KEY=""
 #    because it's stored database in
 #    volume and provisioning is only
 #    done once.
-MYSQL_ROOT_PASSWORD=dev
-MYSQL_USER=dev
-MYSQL_PASSWORD=dev
-MYSQL_DATABASE=database
+MYSQL_ROOT_PASSWORD=UKffzUMarxUBrXPX7gaPoZNfaaXXs6x
+MYSQL_USER=devwp
+MYSQL_PASSWORD=UKffzUMarxUBrXPX7gaPoZNfaaXXs6y
+MYSQL_DATABASE=wordpress
 
 #######################################
 # PostgreSQL settings
